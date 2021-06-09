@@ -1,0 +1,154 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: rgb(240, 235, 235) !important;
+}
+.collapse > ul > li > a {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border-right: 1px solid grey;
+}
+.collapse > ul > li {
+  padding: 0 5px;
+}
+
+.collapse {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.collapse > ul:nth-child(1) > li:nth-child(4) > a,
+.collapse > ul:nth-child(2) > li:nth-child(3) > a {
+  border: none !important ;
+}
+.collapse > ul > li > a:hover {
+  color: white !important;
+  transform: scale(1.03);
+}
+.item1 {
+  background-image: url("/images/banner1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel-item {
+  width: 100%;
+  height: 500px;
+}
+
+.line {
+  border: 1px solid grey;
+  width: 35%;
+  padding: 0px;
+  height: 1px;
+  margin: 0 10px;
+}
+.product-container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2px;
+}
+
+.products > img {
+  width: 100%;
+  height: auto;
+}
+
+.product1 {
+  grid-row: 1 / span 2;
+}
+
+.product4 {
+  grid-column: 2 / span 2;
+}
+
+.music {
+  display: grid;
+  width: 90%;
+  margin: 20px auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+}
+
+.musicItem {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  text-align: center;
+}
+
+.musicItem:nth-child(1) {
+  grid-row: 1/-1;
+}
+
+.musicItem > img {
+  width: 200px;
+  height: 200px;
+}
+
+.acc > li:hover {
+  color: orangered;
+  text-decoration: underline;
+}
+
+.musicItem:hover {
+  transform: scale(1.009);
+  box-shadow: rgb(0, 0, 0, 0.25) 8px 0px 8px;
+}
+
+.review {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: center;
+}
+
+.reviewItem {
+  width: 48% !important;
+  height: 200px;
+  text-align: center;
+  margin: auto;
+}
+
+.reviewItem:hover {
+  transform: scale(1.009);
+  box-shadow: rgb(0, 0, 0, 0.25) 8px 0px 8px;
+}
+
+.reviewItem > img {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.Video-product {
+  display: grid;
+  width: 90%;
+  margin: 20px auto;
+  gap: 4px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.video-Item {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  text-align: center;
+}
+
+#play-btn {
+  border-radius: 100%;
+  position: relative;
+  right: 50%;
+}
+
+#play-btn:hover {
+  background-color: white;
+  opacity: 0.6;
+}
